@@ -5,7 +5,9 @@
 
 
 pre-commit:
-  parallel: true
   jobs:
+    - name: format
+      run: pnpm exec biome format --staged --write --no-errors-on-unmatched
+      stage_fixed: true
     - name: lint
-      run: npx biome check --staged --error-on-warnings --no-errors-on-unmatched
+      run: pnpm exec biome lint --staged --error-on-warnings --no-errors-on-unmatched
