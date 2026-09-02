@@ -1,6 +1,6 @@
 ---
-import DefaultLayout from '../layouts/DefaultLayout.astro'
-import { getBlogs } from '../features/blogs/getBlogs'
+import DefaultLayout from '@/layouts/DefaultLayout.astro'
+import { getBlogs } from '@/features/blogs/getBlogs'
 
 const response = await getBlogs({ fields: ['id', 'title'] })
 ---

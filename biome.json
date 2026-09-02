@@ -41,7 +41,14 @@
         "organizeImports": {
           "level": "on",
           "options": {
-            "groups": [[":NODE:", ":PACKAGE:", ":ALIAS:", ":PATH:", ":STYLE:"]]
+            "groups": [
+              ":NODE:",
+              ":PACKAGE:",
+              "@/layouts/**",
+              [":ALIAS:", "!:STYLE:"],
+              [":PATH:", "!:STYLE:"],
+              ":STYLE:"
+            ]
           }
         }
       }

@@ -1,5 +1,5 @@
-import { microCMSClient } from '../../lib/microcms'
-import type { MicroCMSQueries, MicroCMSListContent } from 'microcms-js-sdk'
+import type { MicroCMSListContent, MicroCMSQueries } from 'microcms-js-sdk'
+import { microCMSClient } from '@/lib/microcms'
 
 export interface Blog extends MicroCMSListContent {
   title: string

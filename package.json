@@ -12,7 +12,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "biome lint",
-    "format": "biome format --write"
+    "format": "biome check --linter-enabled=false --write"
   },
   "dependencies": {
     "astro": "7.2.2",
